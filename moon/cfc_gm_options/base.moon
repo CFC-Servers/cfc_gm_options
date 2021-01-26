@@ -7,7 +7,7 @@ class CFCOption
         @isEphemeral = false
         timer.Simple 0, -> @setup!
 
-    makeDefault: () => error "Not implemeneted"
+    makeDefault: () => error "Not implemented"
     validate: (val) => error "Not implemented"
 
     displayName: (name) =>
@@ -38,7 +38,7 @@ class CFCOption
         10
 
 class CFCOptionString extends CFCOption
-    validate: (val) => true if isstring val else false, "Value not a string"
+    validate: (val) => if isstring val then true else false, "Value not a string"
     makeDefault: () => ""
 
 class CFCOptions

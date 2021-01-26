@@ -3,6 +3,7 @@ luac.out
 
 # Projects
 *.sublime-*
+lua/
 
 # luarocks build files
 *.src.rock
